@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ. SPMB SMKN PRIGENr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FAQ. SPMB SMKN PRIGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Seputar SPMB</a></li>
+            <li><a href="afirmasi.html">Jalur Domisili</a></li>
+            <li><a href="mutasi.html">Jalur Mutasi</a></li>
+            <li><a href="prestasi.html">Jalur Prestasi</a></li>
+            <li><a href="domisili.html">Jalur div</a></li>
+            <li><a href="nilai.html">Jalur Nilai</a></li>
+            <li><a href="kk.html">Pertanyaan Seputar KK</a></li>
+
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html" onclick="closeSidebar()">Seputar SPMB</a>
+        <a href="afirmasi.html" onclick="closeSidebar()">Jalur Afirmasi</a>
+        <a href="mutasi.html" onclick="closeSidebar()">Jalur Mutasi</a>
+        <a href="prestasi.html" onclick="closeSidebar()">Jalur Prestasi    </a>
+        <a href="domisili.html" onclick="closeSidebar()">Jalur Domisili</a>
+        <a href="nilai.html" onclick="closeSidebar()">Jalur Nilai</a>
+        <a href="kk.html" onclick="closeSidebar()">Pertanyaan Seputar KK</a>
+
+        
+    </div>
+
+    <!-- Konten Halaman -->
+
+    <!-- Konten Utama -->
+    <div class="faq-container">
+        <h1>SPMB SMK Jawa Timur 2025/2026</h1>
+
+        <!-- FAQ Seputar -->
+        <h2>Seputar SPMB SMK</h2>
+        <div class="faq-item">
+            <div class="question">Apa saja jalur pendaftaran untuk SMK di SPMB Jatim 2025?</div>
+            <div class="answer">
+            <ul>
+              <li><strong>Jalur Afirmasi</strong>: Untuk calon murid dari keluarga ekonomi tidak mampu, anak buruh, atau penyandang disabilitas (kuota 15%).</li>
+              <li><strong>Jalur Mutasi Orang Tua/Wali</strong>: Untuk calon murid yang pindah domisili karena tugas orang tua atau anak guru (kuota 5%).</li>
+              <li><strong>Jalur Prestasi Hasil Lomba</strong>: Untuk calon murid dengan prestasi akademik/non-akademik (kuota 5%).</li>
+              <li><strong>Jalur Domisili</strong>: Berdasarkan wilayah rayon tempat tinggal (kuota 10%).</li>
+              <li><strong>Jalur Nilai Prestasi Akademik</strong>: Berdasarkan nilai rapor SMP (kuota 65%).</li>
+            </ul>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Bagaimana cara mendaftar secara online?</div>
+            <div class="answer">
+<ol>
+        <li><strong>Pengambilan PIN</strong>: Akses laman <a href="https://spmb.jatimprov.go.id" target="_blank">spmb.jatimprov.go.id</a> (2–13 Juni 2025).</li>
+        <li><strong>Verifikasi Dokumen</strong>: Bawa dokumen asli ke SMK terdekat untuk diverifikasi.</li>
+        <li><strong>Pendaftaran</strong>: Login dengan NISN dan PIN, pilih jalur dan konsentrasi keahlian, lalu unggah dokumen.</li>
+        <li><strong>Cetak Bukti Pendaftaran</strong>.</li>
+    </ol>
+            </div>
+        </div>
+
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Dokumen apa saja yang diperlukan?</div>
+        <div class="answer">
+            <ul>
+                <li>Fotokopi KK dan ijazah/SKL SMP yang dilegalisasi.</li>
+                <li>Surat keterangan sehat dari dokter.</li>
+                <li>Bukti prestasi (untuk jalur prestasi).</li>
+                <li>Surat tugas orang tua (untuk jalur mutasi).</li>
+                <li><strong>Khusus SMK tertentu</strong>: Hasil tes kesehatan atau sertifikat keahlian.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Kapan jadwal pendaftaran dibuka?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Tahap I</strong> (Afirmasi, Mutasi, Prestasi): 16–17 Juni 2025.</li>
+                <li><strong>Tahap III</strong> (Domisili): 26–27 Juni 2025.</li>
+                <li><strong>Tahap IV</strong> (Nilai Prestasi Akademik SMK): 2–3 Juli 2025.</li>
+                <li>Pengumuman hasil seleksi dan daftar ulang sesuai jadwal masing-masing tahap.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa kriteria pemeringkatan untuk jalur domisili?</div>
+        <div class="answer">
+            <ul>
+                <li>Prioritas berdasarkan:
+                    <ol>
+                        <li>Jarak domisili terdekat dengan SMK.</li>
+                        <li>Usia lebih tua.</li>
+                        <li>Waktu pendaftaran.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bagaimana jika kuota tidak terpenuhi?</div>
+        <div class="answer">
+            <p>Sisa kuota akan dialihkan ke jalur lain. Misal: kuota afirmasi yang tidak terisi bisa dialihkan ke jalur prestasi atau domisili.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa sanksi untuk pelanggaran seperti pemalsuan dokumen?</div>
+        <div class="answer">
+            <p>- Calon murid yang terbukti memalsukan dokumen akan <span style="color: red; font-weight: bold;">dibatalkan kelulusannya</span> dan diproses sesuai hukum.</p>
+            <p>- Panitia/Satuan Pendidikan yang melakukan pelanggaran dikenai sanksi administratif.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apakah ada biaya pendaftaran?</div>
+        <div class="answer">
+            <p><strong>Tidak ada biaya pendaftaran.</strong> Proses SPMB gratis. </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bagaimana jika tidak lolos di jalur pilihan pertama?</div>
+        <div class="answer">
+            <p>Calon murid bisa mendaftar di tahap berikutnya atau memilih konsentrasi keahlian lain di SMK yang sama/sekolah berbeda.</p>
+        </div>
+    </div>
+
+        <div class="contact-box">
+            <h3>Informasi Lebih Lanjut</h3>
+            <p>📞 Call Center: <br>
+            🌐 Website SPMB: <a href="https://spmb.jatimprov.go.id">spmb.jatimprov.go.id</a><br>
+            📱 Sosial Media: @d</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

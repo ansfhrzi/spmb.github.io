@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ SPMB SMKN PRIGEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FAQ. SPMB SMKN PRIGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Seputar SPMB</a></li>
+            <li><a href="afirmasi.html">Jalur Domisili</a></li>
+            <li><a href="mutasi.html">Jalur Mutasi</a></li>
+            <li><a href="prestasi.html">Jalur Prestasi</a></li>
+            <li><a href="domisili.html">Jalur div</a></li>
+            <li><a href="nilai.html">Jalur Nilai</a></li>
+            <li><a href="kk.html">Pertanyaan Seputar KK</a></li>
+
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html" onclick="closeSidebar()">Seputar SPMB</a>
+        <a href="afirmasi.html" onclick="closeSidebar()">Jalur Afirmasi</a>
+        <a href="mutasi.html" onclick="closeSidebar()">Jalur Mutasi</a>
+        <a href="prestasi.html" onclick="closeSidebar()">Jalur Prestasi    </a>
+        <a href="domisili.html" onclick="closeSidebar()">Jalur Domisili</a>
+        <a href="nilai.html" onclick="closeSidebar()">Jalur Nilai</a>
+        <a href="kk.html" onclick="closeSidebar()">Pertanyaan Seputar KK</a>
+
+        
+    </div>
+
+    <!-- Konten Halaman -->
+
+    <!-- Konten Utama -->
+    <div class="faq-container">
+        <h1>SPMB SMK Jawa Timur 2025/2026</h1>
+
+        <!-- FAQ Seputar -->
+        <h2>Jalur Afirmasi</h2>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa itu Jalur Afirmasi SMK?</div>
+        <div class="answer">
+            <p>Jalur Afirmasi SMK adalah jalur penerimaan murid baru yang diperuntukkan bagi calon murid dari keluarga ekonomi tidak mampu, anak buruh dari keluarga ekonomi tidak mampu, dan penyandang disabilitas. Tujuannya adalah memberikan kesempatan pendidikan yang berkeadilan bagi kelompok tersebut.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Berapa kuota Jalur Afirmasi SMK?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>15% dari daya tampung SMK</strong>, dengan rincian:</li>
+                <li><strong>7%</strong> untuk keluarga ekonomi tidak mampu dan Afirmasi Pendidikan Menengah (ADEM).</li>
+                <li><strong>5%</strong> untuk anak buruh dari keluarga ekonomi tidak mampu.</li>
+                <li><strong>3%</strong> untuk penyandang disabilitas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa persyaratan umum Jalur Afirmasi SMK?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Keluarga Ekonomi Tidak Mampu/ADEM:</strong>
+                    <ul>
+                        <li>Bukti keikutsertaan dalam program pemerintah seperti Kartu Indonesia Pintar (KIP), Program Keluarga Harapan (PKH), atau Bantuan Pangan Non Tunai (BPNT).</li>
+                        <li><span style="color: red; font-weight: bold;">Tidak boleh menggunakan SKTM atau Kartu Indonesia Sehat (KIS).</span></li>
+                    </ul>
+                </li>
+                <li><strong>Anak Buruh dari Keluarga Ekonomi Tidak Mampu:</strong>
+                    <ul>
+                        <li>Bukti keikutsertaan program pemerintah (seperti di atas) <strong>+</strong> surat keterangan/tanda keanggotaan asosiasi buruh orang tua/wali.</li>
+                    </ul>
+                </li>
+                <li><strong>Penyandang Disabilitas:</strong>
+                    <ul>
+                        <li>Surat keterangan asesmen awal (fisik/psikologis, akademik, fungsional, sensorik, dan motorik) dari dokter/psikolog.</li>
+                        <li>Kartu Penyandang Disabilitas dari Dinas Sosial <strong>+</strong> surat keterangan kelompok difabel (netra, rungu, dll.) dari sekolah asal.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bagaimana cara mendaftar Jalur Afirmasi SMK?</div>
+        <div class="answer">
+            <ol>
+                <li><strong>Ambil PIN</strong> secara online di laman SPMB Jatim: <a href="https://spmb.jatimprov.go.id" target="_blank">spmb.jatimprov.go.id</a>.</li>
+                <li><strong>Verifikasi dokumen</strong> di SMK terdekat sesuai domisili (2–14 Juni 2025).</li>
+                <li><strong>Daftar online</strong> pada <strong>Tahap I (16–17 Juni 2025)</strong> dengan memilih <strong>1 konsentrasi keahlian</strong> di SMK tujuan.</li>
+                <li>Unggah dokumen pendukung sesuai kategori afirmasi yang dipilih.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa kriteria seleksi Jalur Afirmasi SMK?</div>
+        <div class="answer">
+            <ul>
+                <li>Jika pendaftar melebihi kuota, prioritas penerimaan berdasarkan:</li>
+                <ol>
+                    <li><strong>Jarak domisili terdekat</strong> ke SMK tujuan.</li>
+                    <li><strong>Usia lebih tua</strong>.</li>
+                    <li><strong>Waktu pendaftaran</strong> (siapa yang mendaftar lebih awal).</li>
+                </ol>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Jika tidak lolos Jalur Afirmasi SMK, Apakah bisa mendaftar di jalur lain?</div>
+        <div class="answer">
+            <p>Jika tidak diterima di Jalur Afirmasi, Anda <strong>boleh mendaftar jalur lain</strong> di tahap berikutnya (misalnya Jalur Domisili atau Nilai Prestasi Akademik SMK).</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bagaimana jika kuota afirmasi tidak terpenuhi?</div>
+        <div class="answer">
+            <p>Sisa kuota dialihkan ke <strong>Jalur Prestasi Hasil Lomba</strong> atau <strong>Jalur Domisili SMK</strong>.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Kapan pengumuman hasil Jalur Afirmasi SMK?</div>
+        <div class="answer">
+            <p>Pengumuman dilakukan pada <strong>20 Juni 2025</strong> melalui laman <a href="https://spmb.jatimprov.go.id" target="_blank">spmb.jatimprov.go.id</a>.</p>
+        </div>
+    </div>
+
+        <div class="contact-box">
+            <h3>Informasi Lebih Lanjut</h3>
+            <p>📞 Call Center: 0800-1234-5678<br>
+            🌐 Website: <a href="https://spmb.jatimprov.go.id">spmb.jatimprov.go.id</a><br>
+            📱 Sosial Media: @dindik_jatim</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

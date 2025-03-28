@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ SPMB SMKN PRIGEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FAQ. SPMB SMKN PRIGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Seputar SPMB</a></li>
+            <li><a href="afirmasi.html">Jalur Domisili</a></li>
+            <li><a href="mutasi.html">Jalur Mutasi</a></li>
+            <li><a href="prestasi.html">Jalur Prestasi</a></li>
+            <li><a href="domisili.html">Jalur div</a></li>
+            <li><a href="nilai.html">Jalur Nilai</a></li>
+            <li><a href="kk.html">Pertanyaan Seputar KK</a></li>
+
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html" onclick="closeSidebar()">Seputar SPMB</a>
+        <a href="afirmasi.html" onclick="closeSidebar()">Jalur Afirmasi</a>
+        <a href="mutasi.html" onclick="closeSidebar()">Jalur Mutasi</a>
+        <a href="prestasi.html" onclick="closeSidebar()">Jalur Prestasi    </a>
+        <a href="domisili.html" onclick="closeSidebar()">Jalur Domisili</a>
+        <a href="nilai.html" onclick="closeSidebar()">Jalur Nilai</a>
+        <a href="kk.html" onclick="closeSidebar()">Pertanyaan Seputar KK</a>
+
+        
+    </div>
+
+    <!-- Konten Halaman -->
+
+    <!-- Konten Utama -->
+    <div class="faq-container">
+        <h1>SPMB SMK Jawa Timur 2025/2026</h1>
+
+        <!-- FAQ Seputar -->
+        <h2>Jalur Nilai</h2>
+
+<div class="faq-container">
+    <!-- Pertanyaan 1 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">1. Apa itu Jalur Nilai Prestasi Akademik SMK?</div>
+        <div class="answer">
+            <p>Jalur Nilai Prestasi Akademik SMK adalah jalur penerimaan murid baru yang menggunakan <strong>nilai rapor SMP/sederajat</strong> sebagai kriteria utama. Jalur ini ditujukan untuk calon murid dengan capaian akademik tinggi yang ingin melanjutkan ke Sekolah Menengah Kejuruan (SMK).</p>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 2 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">2. Berapa kuota Jalur Nilai SMK?</div>
+        <div class="answer">
+            <ul>
+                <li>Kuota jalur ini adalah <strong>65% dari daya tampung total SMK</strong></li>
+                <li>Contoh: 
+                    <ul>
+                        <li>Jika SMK X memiliki daya tampung 300 murid</li>
+                        <li>Kuota jalur nilai = <strong>195 murid</strong></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 3 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">3. Mata Pelajaran yang Dinilai</div>
+        <div class="answer">
+            <ol>
+                <li>Pendidikan Agama dan Budi Pekerti</li>
+                <li>Pendidikan Pancasila dan Kewarganegaraan (PPKn)</li>
+                <li>Bahasa Indonesia</li>
+                <li>Matematika</li>
+                <li>Ilmu Pengetahuan Alam (IPA)</li>
+                <li>Ilmu Pengetahuan Sosial (IPS)</li>
+                <li>Bahasa Inggris</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 4 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">4. Bagaimana cara menghitung Nilai Akhir?</div>
+        <div class="answer">
+            <p><strong>Rumus:</strong><br>
+            <strong>Nilai Akhir</strong> = (Rata-rata Rapor × 60%) + (Indeks Sekolah Asal × 40%)</p>
+            
+            <ul>
+                <li><strong>Rata-rata Rapor</strong>: Rerata nilai 7 mata pelajaran di rapor SMP semester 1–5</li>
+                <li><strong>Indeks Sekolah Asal</strong>: Nilai yang ditetapkan Dinas Pendidikan</li>
+            </ul>
+            
+            <p><strong>Contoh:</strong></p>
+            <table>
+                <tr>
+                    <th>Komponen</th>
+                    <th>Nilai</th>
+                    <th>Perhitungan</th>
+                </tr>
+                <tr>
+                    <td>Rata-rata rapor</td>
+                    <td>85</td>
+                    <td>85 × 60% = 51</td>
+                </tr>
+                <tr>
+                    <td>Indeks sekolah</td>
+                    <td>80</td>
+                    <td>80 × 40% = 32</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>Total Nilai Akhir</strong></td>
+                    <td><strong>83</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<!-- Pertanyaan 5 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">5. Apa itu Indeks Sekolah Asal?</div>
+    <div class="answer">
+        <p>Indeks Sekolah Asal adalah angka yang merepresentasikan <strong>kualitas akademik sekolah asal calon murid</strong>, dihitung dari rata-rata nilai alumni sekolah tersebut di SMK Negeri.</p>
+        <ul>
+            <li>Jika sekolah asal <strong>tidak memiliki indeks</strong>, digunakan indeks terendah di Jawa Timur</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Pertanyaan 6 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">6. Bagaimana cara mendaftar Jalur Nilai SMK?</div>
+    <div class="answer">
+        <ol>
+            <li><strong>Ambil PIN</strong> di laman <em>spmb.jatimprov.go.id</em> (2–13 Juni 2025)</li>
+            <li><strong>Verifikasi Rapor</strong> oleh sekolah asal (19–24 Mei 2025)</li>
+            <li><strong>Daftar Online</strong> di <strong>Tahap IV</strong> (2–3 Juli 2025):
+                <ul>
+                    <li>Pilih <strong>maksimal 3 konsentrasi keahlian</strong></li>
+                    <li>Bisa di SMK yang sama atau berbeda</li>
+                </ul>
+            </li>
+            <li>Unggah dokumen:
+                <ul>
+                    <li>Rapor</li>
+                    <li>Ijazah/SKL</li>
+                    <li>KK</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<!-- Pertanyaan 7 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">7. Kriteria Seleksi jika Kuota Penuh</div>
+    <div class="answer">
+        <ol>
+            <li><strong>Nilai Akhir tertinggi</strong></li>
+            <li><strong>Jarak domisili terdekat</strong> ke SMK tujuan</li>
+            <li><strong>Usia lebih tua</strong> jika nilai dan jarak sama</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Pertanyaan 8 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">8. Bolehkah mendaftar jalur lain setelah ikut Jalur Nilai?</div>
+    <div class="answer">
+        <p>Setelah <strong>Jalur Nilai Prestasi Akademik SMK (Tahap IV)</strong>, <strong>tidak ada tahap pendaftaran baru</strong>.</p>
+    </div>
+</div>
+
+<!-- Pertanyaan 9 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">9. Kapan pengumuman hasil Jalur Nilai SMK?</div>
+    <div class="answer">
+        <ul>
+            <li><strong>Pengumuman</strong>: 
+                <ul>
+                    <li>4 Juli 2025 di <em>spmb.jatimprov.go.id</em></li>
+                </ul>
+            </li>
+            <li><strong>Daftar Ulang</strong>: 
+                <ul>
+                    <li>4–5 Juli 2025 di SMK tujuan</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Pertanyaan 10 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">10. Dokumen yang Diperlukan</div>
+    <div class="answer">
+        <ul>
+            <li>Foto copy <strong>rapor SMP semester 1–5</strong> (dilegalisasi sekolah asal)</li>
+            <li><strong>Ijazah/SKL SMP/sederajat</strong></li>
+            <li><strong>Kartu Keluarga (KK)</strong> yang menunjukkan domisili</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Contoh Kasus -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Contoh Perhitungan Nilai Akhir</div>
+    <div class="answer">
+        <div class="case-example">
+            <p><strong>Kasus A:</strong></p>
+            <ul>
+                <li>Rata-rata rapor: 90</li>
+                <li>Indeks sekolah: 85</li>
+                <li><strong>Nilai Akhir</strong>: (90 × 60%) + (85 × 40%) = 88</li>
+            </ul>
+            
+            <p><strong>Kasus B:</strong></p>
+            <ul>
+                <li>Rata-rata rapor: 80</li>
+                <li>Indeks sekolah: 75</li>
+                <li><strong>Nilai Akhir</strong>: (80 × 60%) + (75 × 40%) = 78</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="contact-box">
+            <h3>Informasi Lebih Lanjut</h3>
+            <p>📞 Call Center: 0800-1234-5678<br>
+            🌐 Website: <a href="https://spmb.jatimprov.go.id">spmb.jatimprov.go.id</a><br>
+            📱 Sosial Media: @dindik_jatim</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

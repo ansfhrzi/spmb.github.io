@@ -1,0 +1,254 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+h3 {
+    color: #2980b9; /* Warna biru lebih gelap dari h2 */
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+h4 {
+    color: #16a085; /* Warna turquoise */
+    margin-top: 20px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul ul {
+    padding-left: 40px;
+}
+
+/* Indentasi untuk semua level ordered list */
+ol {
+    padding-left: 30px;  /* Indentasi dasar */
+    margin: 15px 0;      /* Jarak antar list */
+    list-style-type: decimal;  /* Tipe numbering default */
+}
+
+/* Indentasi level 2 (nested list) */
+ol ol {
+    padding-left: 40px;
+    list-style-type: lower-alpha;  /* a, b, c */
+}
+
+hr {
+    margin: 10px 0;  /* 30px atas-bawah, 0 kiri-kanan */
+    border: 0;       /* Reset border default */
+    border-top: 2px solid #ecf0f1;  /* Warna garis sesuai tema */
+    opacity: 0.8;    /* Sedikit transparansi */
+    transition: all 0.3s ease;  /* Animasi opsional */
+}
+
+/* Hover effect (opsional) */
+hr:hover {
+    border-color: #3498db;  /* Warna biru saat hover */
+    opacity: 1;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky; /* Membuat navbar sticky */
+    top: 0; /* Menempel di bagian atas */
+    z-index: 1000; /* Memastikan navbar selalu di atas elemen lain */
+}
+
+.navbar .logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hamburger Menu Icon */
+.navbar .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+        .faq-item {
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .question {
+            color: #e74c3c;
+            font-weight: bold;
+            padding: 15px;
+            cursor: pointer;
+            background: #f8f9fa;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question::after {
+            content: "+";
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .question.active::after {
+            content: "-";
+            transform: rotate(180deg);
+        }
+
+        .answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+  .answer.show {
+    padding: 20px;
+    max-height: 500px; /* Sesuaikan sesuai kebutuhan */
+    overflow-y: auto;  /* Membuat scroll vertikal otomatis */
+    transition: max-height 0.3s ease-in-out; /* Animasi opsional */
+    
+    /* Styling scrollbar (opsional) */
+    scrollbar-width: thin;
+    scrollbar-color: #bdc3c7 #ecf0f1;
+}
+
+/* Untuk browser WebKit (Chrome, Edge, Safari) */
+.answer.show::-webkit-scrollbar {
+    width: 8px;
+}
+
+.answer.show::-webkit-scrollbar-track {
+    background: #ecf0f1;
+    border-radius: 4px;
+}
+
+.answer.show::-webkit-scrollbar-thumb {
+    background-color: #bdc3c7;
+    border-radius: 4px;
+    border: 1px solid #ecf0f1;
+}
+
+        .contact-box {
+            background: #2ecc71;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: underline;
+        }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .navbar .logo {
+        flex-grow: 1;
+    }
+}
+
+/* Konten Halaman */
+.content {
+    padding: 20px;
+    margin-top: 20px;
+}

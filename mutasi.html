@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ SPMB SMKN PRIGEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FAQ. SPMB SMKN PRIGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Seputar SPMB</a></li>
+            <li><a href="afirmasi.html">Jalur Domisili</a></li>
+            <li><a href="mutasi.html">Jalur Mutasi</a></li>
+            <li><a href="prestasi.html">Jalur Prestasi</a></li>
+            <li><a href="domisili.html">Jalur div</a></li>
+            <li><a href="nilai.html">Jalur Nilai</a></li>
+            <li><a href="kk.html">Pertanyaan Seputar KK</a></li>
+
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html" onclick="closeSidebar()">Seputar SPMB</a>
+        <a href="afirmasi.html" onclick="closeSidebar()">Jalur Afirmasi</a>
+        <a href="mutasi.html" onclick="closeSidebar()">Jalur Mutasi</a>
+        <a href="prestasi.html" onclick="closeSidebar()">Jalur Prestasi    </a>
+        <a href="domisili.html" onclick="closeSidebar()">Jalur Domisili</a>
+        <a href="nilai.html" onclick="closeSidebar()">Jalur Nilai</a>
+        <a href="kk.html" onclick="closeSidebar()">Pertanyaan Seputar KK</a>
+
+        
+    </div>
+
+    <!-- Konten Halaman -->
+
+    <!-- Konten Utama -->
+    <div class="faq-container">
+        <h1>SPMB SMK Jawa Timur 2025/2026</h1>
+
+        <!-- FAQ Seputar -->
+        <h2>Jalur Mutasi</h2>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apa itu Jalur Mutasi SMK?</div>
+    <div class="answer">
+        <p>Jalur Mutasi SMK adalah jalur penerimaan murid baru bagi calon murid yang <strong>berpindah domisili</strong> karena orang tua/wali <strong>mutasi tugas</strong> atau bagi <strong>anak guru/tenaga kependidikan</strong> yang mendaftar di SMK tempat orang tua bekerja.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apa saja jenis Jalur Mutasi SMK?</div>
+    <div class="answer">
+        <ul>
+            <li><strong>Mutasi Tugas Orang Tua/Wali</strong>: Untuk calon murid yang pindah domisili karena orang tua/wali <strong>mutasi pekerjaan</strong>.</li>
+            <li><strong>Mutasi Anak Guru/Tenaga Kependidikan</strong>: Untuk anak guru/staf yang bekerja di SMK tujuan.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Berapa kuota Jalur Mutasi SMK?</div>
+    <div class="answer">
+        <ul>
+            <li><strong>5% dari daya tampung SMK</strong>, dengan rincian:</li>
+            <li>3% untuk Mutasi Tugas Orang Tua/Wali.</li>
+            <li>2% untuk Mutasi Anak Guru/Tenaga Kependidikan.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apa persyaratan Jalur Mutasi Tugas Orang Tua/Wali?</div>
+    <div class="answer">
+        <ul>
+            <li><strong>Surat Mutasi Tugas</strong> dari instansi/organisasi tempat orang tua bekerja (ASN/swasta).</li>
+            <li><strong>Surat Keterangan Pindah Domisili (SKPD)</strong> dari Dinas Dukcapil untuk orang tua <strong>dan</strong> calon murid.</li>
+            <li><strong>Kartu Keluarga (KK) terbaru</strong> yang menunjukkan domisili baru.</li>
+            <li><strong>Ijazah/SKL SMP/sederajat</strong>.</li>
+            <li><strong>Rapor SMP semester 1–5</strong> (nilai mata pelajaran: Agama, PPKn, Bahasa Indonesia, Matematika, IPA, IPS, Bahasa Inggris).</li>
+        </ul>
+        <br>
+        <em>
+        <p><strong>Catatan:</strong></p>
+        <ul>
+            <li>Surat mutasi tugas harus diterbitkan <strong>maksimal 1 tahun sebelum pendaftaran</strong> (sebelum 16 Juni 2024).</li>
+            <li>Mutasi berlaku untuk perpindahan <strong>antar kabupaten/kota dalam Jawa Timur</strong> atau <strong>dari luar Jawa Timur</strong>.</li>
+            <li>Jika mutasi tugas disebabkan oleh pensiun/dinas berakhir, jalur ini <strong>tidak bisa digunakan</strong>.</li>
+        </ul></em>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apa persyaratan Jalur Mutasi Anak Guru?</div>
+    <div class="answer">
+        <ul>
+            <li>Surat Penugasan/SK orang tua sebagai guru/tenaga kependidikan di SMK tujuan.</li>
+            <li>Kartu Keluarga (KK) yang mencantumkan nama orang tua dan calon murid.</li>
+            <li>Ijazah/SKL SMP/sederajat.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Bagaimana cara mendaftar Jalur Mutasi SMK?</div>
+    <div class="answer">
+        <ol>
+            <li><strong>Ambil PIN</strong> di <em>spmb.jatimprov.go.id</em> (2–13 Juni 2025).</li>
+            <li><strong>Verifikasi Dokumen</strong> di SMK tujuan (2–14 Juni 2025).</li>
+            <li><strong>Daftar Online</strong> di <strong>Tahap I (16–17 Juni 2025)</strong> dengan mengunggah dokumen mutasi.</li>
+            <li><strong>Cetak bukti pendaftaran</strong>.</li>
+        </ol>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apa kriteria seleksi jika kuota penuh?</div>
+    <div class="answer">
+        <ul>
+            <li>Jarak domisili terdekat ke SMK tujuan.</li>
+            <li>Usia lebih tua jika jarak sama.</li>
+            <li>Waktu pendaftaran (siapa yang lebih awal mendaftar).</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Bolehkah mendaftar jalur lain jika sudah ikut Jalur Mutasi?</div>
+    <div class="answer">
+        <p><strong>Jika diterima di Jalur Mutasi</strong>: Tidak boleh mendaftar jalur lain.</p>
+        <p><strong>Jika tidak diterima</strong>: Bisa mendaftar ke jalur lain di tahap berikutnya.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Kapan pengumuman hasil Jalur Mutasi SMK?</div>
+    <div class="answer">
+        <ul>
+            <li><strong>Pengumuman</strong>: 20 Juni 2025 di <em>spmb.jatimprov.go.id</em>.</li>
+            <li><strong>Daftar ulang</strong>: 20–21 Juni 2025 di SMK tujuan.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Contoh Kasus</div>
+    <div class="answer">
+        <p><strong>Kasus A</strong>: Ayah seorang PNS dipindahkan dari Surabaya ke Malang. Anaknya bisa mendaftar ke SMK di Malang via Jalur Mutasi Tugas.</p>
+        <p><strong>Kasus B</strong>: Ibu guru di SMKN 12 Surabaya ingin anaknya sekolah di sana. Anaknya bisa mendaftar via Jalur Mutasi Anak Guru.</p>
+    </div>
+</div>
+
+        <div class="contact-box">
+            <h3>Informasi Lebih Lanjut</h3>
+            <p>📞 Call Center: 0800-1234-5678<br>
+            🌐 Website: <a href="https://spmb.jatimprov.go.id">spmb.jatimprov.go.id</a><br>
+            📱 Sosial Media: @dindik_jatim</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

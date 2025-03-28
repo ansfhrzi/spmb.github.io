@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ SPMB SMKN PRIGEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FAQ. SPMB SMKN PRIGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Seputar SPMB</a></li>
+            <li><a href="afirmasi.html">Jalur Domisili</a></li>
+            <li><a href="mutasi.html">Jalur Mutasi</a></li>
+            <li><a href="prestasi.html">Jalur Prestasi</a></li>
+            <li><a href="domisili.html">Jalur div</a></li>
+            <li><a href="nilai.html">Jalur Nilai</a></li>
+            <li><a href="kk.html">Pertanyaan Seputar KK</a></li>
+
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html" onclick="closeSidebar()">Seputar SPMB</a>
+        <a href="afirmasi.html" onclick="closeSidebar()">Jalur Afirmasi</a>
+        <a href="mutasi.html" onclick="closeSidebar()">Jalur Mutasi</a>
+        <a href="prestasi.html" onclick="closeSidebar()">Jalur Prestasi    </a>
+        <a href="domisili.html" onclick="closeSidebar()">Jalur Domisili</a>
+        <a href="nilai.html" onclick="closeSidebar()">Jalur Nilai</a>
+        <a href="kk.html" onclick="closeSidebar()">Pertanyaan Seputar KK</a>
+
+        
+    </div>
+
+    <!-- Konten Halaman -->
+
+    <!-- Konten Utama -->
+    <div class="faq-container">
+        <h1>SPMB SMK Jawa Timur 2025/2026</h1>
+
+        <!-- FAQ Seputar -->
+        <h2>Jalur Domisili</h2>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa itu Jalur Domisili SMK?</div>
+        <div class="answer">
+            <p>Jalur Domisili SMK adalah jalur penerimaan murid baru berdasarkan wilayah tempat tinggal calon murid. Jalur ini diperuntukkan bagi calon murid yang berdomisili di dalam <strong>wilayah rayon</strong> SMK tujuan atau wilayah luar rayon yang ditetapkan oleh pemerintah daerah. Tujuannya adalah memprioritaskan murid yang tinggal dekat dengan sekolah untuk memudahkan akses pendidikan.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Berapa kuota Jalur Domisili SMK?</div>
+        <div class="answer">
+            <p>Kuota Jalur Domisili SMK adalah <strong>10% dari daya tampung total</strong> SMK.</p>
+            <p>Contoh: Jika daya tampung SMK X adalah 360 murid, kuota jalur domisili adalah <strong>36 murid</strong>.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa persyaratan Jalur Domisili SMK?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Domisili:</strong>
+                    <ul>
+                        <li>Kartu Keluarga (KK) yang diterbitkan minimal <strong>1 tahun sebelum pendaftaran</strong> (sebelum 16 Juni 2024).</li>
+                        <li>Jika KK tidak ada (misal: korban bencana), bisa menggunakan Surat Keterangan Domisili (SKD) dari kelurahan/desa.</li>
+                    </ul>
+                </li>
+                <li><strong>Dokumen Akademik:</strong>
+                    <ul>
+                        <li>Rapor SMP semester 1–5 (nilai mata pelajaran: Agama, PPKn, Bahasa Indonesia, Matematika, IPA, IPS, Bahasa Inggris).</li>
+                        <li>Ijazah/Surat Keterangan Lulus (SKL) SMP/sederajat.</li>
+                    </ul>
+                </li>
+                <li><strong>Usia:</strong> Maksimal 21 tahun per 1 Juli 2025.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Bagaimana jika KK baru saja dibuat (kurang dari 1 tahun)?</div>
+    <div class="answer">
+        <p>KK tetap bisa digunakan jika perubahan data bukan karena <strong>perpindahan domisili</strong>, misalnya:</p>
+        <ul>
+            <li>Penambahan/pengurangan anggota keluarga (kelahiran, kematian).</li>
+            <li>Perubahan data administratif (misal: KK rusak/hilang).</li>
+        </ul>
+        <p><strong>Dokumen pendukung yang harus dilampirkan:</strong></p>
+        <ul>
+            <li>KK lama.</li>
+            <li>Surat keterangan kematian/cerai.</li>
+            <li>Surat kehilangan dari kepolisian (jika KK hilang).</li>
+        </ul>
+    </div>
+    </div>
+    
+    <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apa yang dilakukan jika KK hilang/rusak?</div>
+    <div class="answer">
+        <ul>
+            <li>Gunakan <strong>Surat Keterangan Domisili (SKD)</strong> dari lurah/kepala desa.</li>
+            <li>SKD harus dilengkapi <strong>fotokopi surat keterangan bencana dari BPBD</strong> (jika domisili di daerah terdampak bencana).</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Bagaimana jika alamat di KK berbeda dengan domisili asli?</div>
+    <div class="answer">
+        <ul>
+            <li>Data domisili diambil dari <strong>alamat terdaftar di KK</strong>.</li>
+            <li>Jika ada ketidaksesuaian, calon murid <strong>tidak bisa menggunakan jalur domisili</strong> dan harus mendaftar di jalur lain.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Apakah boleh menggunakan KK orang lain (misal: keluarga)?</div>
+    <div class="answer">
+        <p><strong>Tidak.</strong> KK harus mencantumkan <strong>nama calon murid sebagai anggota keluarga</strong> dan nama orang tua/wali sesuai data di ijazah SMP.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Bagaimana jika calon murid tinggal di pondok pesantren/panti asuhan?</div>
+    <div class="answer">
+        <p>Gunakan <strong>Surat Keterangan Domisili dari lembaga</strong> (pondok/panti) yang dilengkapi:</p>
+        <ul>
+            <li>Surat izin pendirian lembaga.</li>
+            <li>Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) dari pimpinan lembaga.</li>
+        </ul>
+        <p>Domisili akan mengikuti alamat lembaga tersebut.</p>
+    </div>
+</div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bagaimana cara mendaftar Jalur Domisili SMK?</div>
+        <div class="answer">
+            <ol>
+                <li><strong>Ambil PIN</strong> di laman <a href="https://spmb.jatimprov.go.id" target="_blank">spmb.jatimprov.go.id</a> (2–13 Juni 2025).</li>
+                <li><strong>Verifikasi Dokumen</strong> di SMK terdekat sesuai domisili (2–14 Juni 2025).</li>
+                <li><strong>Daftar Online</strong> di Tahap III (26–27 Juni 2025):</li>
+                <ul>
+                    <li>Pilih <strong>maksimal 3 konsentrasi keahlian</strong> di SMK yang sama atau berbeda (wilayah dalam/luar rayon).</li>
+                </ul>
+                <li>Unggah dokumen pendukung (KK, rapor, ijazah/SKL).</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa kriteria seleksi Jalur Domisili SMK?</div>
+        <div class="answer">
+            <ol>
+                <li><strong>Nilai Akademik</strong>: Gabungan rata-rata rapor (60%) + indeks sekolah asal (40%).</li>
+                <li><strong>Jarak Domisili Terdekat</strong> ke SMK tujuan.</li>
+                <li><strong>Usia Lebih Tua</strong> jika nilai dan jarak sama.</li>
+                <li><strong>Waktu Pendaftaran</strong> (siapa yang mendaftar lebih awal).</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bolehkah memilih SMK di luar rayon domisili?</div>
+        <div class="answer">
+            <p><strong>Boleh</strong>, tetapi prioritas utama diberikan kepada calon murid dalam rayon.</p>
+            <p>Calon murid luar rayon hanya diterima jika kuota dalam rayon belum terpenuhi.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa yang terjadi jika kuota domisili tidak terpenuhi?</div>
+        <div class="answer">
+            <p>Sisa kuota dialihkan ke <strong>Jalur Nilai Prestasi Akademik SMK</strong>.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Kapan pengumuman hasil Jalur Domisili SMK?</div>
+        <div class="answer">
+            <p><strong>Pengumuman:</strong> 28 Juni 2025 di laman <a href="https://spmb.jatimprov.go.id" target="_blank">spmb.jatimprov.go.id</a>.</p>
+            <p><strong>Daftar ulang:</strong> 28 Juni dan 30 Juni 2025 di SMK tujuan.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Bagaimana jika domisili saya di perbatasan kabupaten/provinsi?</div>
+        <div class="answer">
+            <p>Calon murid di wilayah perbatasan bisa mendaftar ke SMK terdekat di rayon tersebut, sesuai penetapan Dinas Pendidikan.</p>
+            <p>Contoh: Domisili di Lamongan (berbatasan dengan Surabaya) bisa mendaftar ke SMK di Surabaya jika termasuk dalam rayon yang ditetapkan.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Apa bedanya Jalur Domisili SMK dan SMA?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Kuota:</strong></li>
+                <ul>
+                    <li>SMK: 10% dari daya tampung.</li>
+                    <li>SMA: 35% (20% reguler + 15% sebaran).</li>
+                </ul>
+                <li><strong>Pilihan Konsentrasi:</strong></li>
+                <ul>
+                    <li>SMK: Bisa memilih 3 konsentrasi keahlian di SMK yang sama atau berbeda.</li>
+                    <li>SMA: Maksimal 3 SMA dalam rayon.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+
+        <div class="contact-box">
+            <h3>Informasi Lebih Lanjut</h3>
+            <p>📞 Call Center: 0800-1234-5678<br>
+            🌐 Website: <a href="https://spmb.jatimprov.go.id">spmb.jatimprov.go.id</a><br>
+            📱 Sosial Media: @dindik_jatim</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

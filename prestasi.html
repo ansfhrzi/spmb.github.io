@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ SPMB SMKN PRIGEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FAQ. SPMB SMKN PRIGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Seputar SPMB</a></li>
+            <li><a href="afirmasi.html">Jalur Domisili</a></li>
+            <li><a href="mutasi.html">Jalur Mutasi</a></li>
+            <li><a href="prestasi.html">Jalur Prestasi</a></li>
+            <li><a href="domisili.html">Jalur div</a></li>
+            <li><a href="nilai.html">Jalur Nilai</a></li>
+            <li><a href="kk.html">Pertanyaan Seputar KK</a></li>
+
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html" onclick="closeSidebar()">Seputar SPMB</a>
+        <a href="afirmasi.html" onclick="closeSidebar()">Jalur Afirmasi</a>
+        <a href="mutasi.html" onclick="closeSidebar()">Jalur Mutasi</a>
+        <a href="prestasi.html" onclick="closeSidebar()">Jalur Prestasi    </a>
+        <a href="domisili.html" onclick="closeSidebar()">Jalur Domisili</a>
+        <a href="nilai.html" onclick="closeSidebar()">Jalur Nilai</a>
+        <a href="kk.html" onclick="closeSidebar()">Pertanyaan Seputar KK</a>
+
+        
+    </div>
+
+    <!-- Konten Halaman -->
+
+    <!-- Konten Utama -->
+    <div class="faq-container">
+        <h1>SPMB SMK Jawa Timur 2025/2026</h1>
+
+        <!-- FAQ Seputar -->
+        <h2>Jalur Prestasi Lomba</h2>
+
+<div class="faq-container">
+    <!-- Pertanyaan 1 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">1. Apa itu Jalur Prestasi Lomba?</div>
+        <div class="answer">
+            <p>Jalur Prestasi Lomba adalah jalur penerimaan murid baru SMK bagi calon murid yang memiliki <strong>prestasi di kompetisi akademik/non-akademik</strong> (olahraga, seni, keagamaan, pramuka, dll.). Jalur ini bertujuan menjaring siswa berprestasi untuk mendukung pengembangan bakat di SMK.</p>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 2 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">2. Jenis kompetisi apa saja yang diakui?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Akademik</strong>:
+                    <ul>
+                        <li>Olimpiade Sains Nasional (OSN/KSN), Kompetisi Robotik, Olimpiade Penelitian Siswa Indonesia (OPSI), dll.</li>
+                    </ul>
+                </li>
+                <li><strong>Non-Akademik</strong>:
+                    <ul>
+                        <li>Olahraga (O2SN, PORPROV, PON), Seni Budaya (FLS2N), Keagamaan (MTQ, Hafiz Quran), Pramuka, dll.</li>
+                    </ul>
+                </li>
+                <li><strong>Golden Ticket</strong>:
+                    <ul>
+                        <li>Ketua OSIS tingkat sekolah/kabupaten</li>
+                        <li>Penghafal Quran (minimal 1 juz)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 3 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">3. Berapa kuota Jalur Prestasi Lomba SMK?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>5% dari daya tampung SMK</strong>, dengan rincian:
+                    <ul>
+                        <li>2% untuk prestasi akademik</li>
+                        <li>3% untuk prestasi non-akademik (termasuk golden ticket)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 4 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">4. Apa persyaratan dokumen?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Sertifikat/piagam kompetisi</strong> yang dilegalisasi oleh sekolah asal atau instansi penyelenggara</li>
+                <li><strong>Surat keterangan tingkat lomba</strong> (kabupaten, provinsi, nasional, internasional) jika tidak tercantum di sertifikat</li>
+                <li><strong>SK penetapan ketua OSIS</strong> (untuk golden ticket)</li>
+                <li><strong>Sertifikat hafalan Quran</strong> dari lembaga terakreditasi (untuk golden ticket)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pertanyaan 5 -->
+    <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">5. Bagaimana sistem penilaian prestasi?</div>
+    <div class="answer">
+        <p>Prestasi diberi skor berdasarkan <strong>tingkat lomba</strong> dan <strong>peringkat</strong>:</p>
+        
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Tingkat Lomba</th>
+                    <th scope="col">Juara I</th>
+                    <th scope="col">Juara II</th>
+                    <th scope="col">Juara III</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kabupaten/Kota</td>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>32</td>
+                    <td>16</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Nasional</td>
+                    <td>64</td>
+                    <td>32</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Internasional</td>
+                    <td>128</td>
+                    <td>64</td>
+                    <td>32</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table-notes">
+            <p><strong>Catatan:</strong></p>
+            <ul>
+                <li>Prestasi <strong>beregu</strong> mendapat skor 50% dari nilai perorangan</li>
+                <li>Skor Golden Ticket:
+                    <ul>
+                        <li>Ketua OSIS sekolah: 8 poin</li>
+                        <li>Ketua OSIS kabupaten: 16 poin</li>
+                        <li>Hafiz Quran 30 juz: 128 poin</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- Pertanyaan 6-11 -->
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">6. Bolehkah menggunakan sertifikat lomba beregu?</div>
+        <div class="answer">
+            <ul>
+                <li>Sertifikat harus mencantumkan nama peserta</li>
+                <li>Maksimal <strong>2 peserta dari satu tim</strong> yang bisa menggunakan sertifikat tersebut untuk mendaftar</li>
+                <li>Skor dihitung <strong>50%</strong> dari skor perorangan</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">7. Apa itu "Golden Ticket"?</div>
+        <div class="answer">
+            <ul>
+                <li><strong>Prioritas khusus</strong> untuk:
+                    <ul>
+                        <li>Ketua OSIS yang aktif di SMP/MTs (1 kuota per SMK)</li>
+                        <li>Penghafal Quran (1 kuota per SMK)</li>
+                    </ul>
+                </li>
+                <li>Seleksi berdasarkan <strong>skor tertinggi</strong> atau <strong>hafalan terbanyak</strong> jika banyak pendaftar</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">8. Bolehkah mengunggah lebih dari satu sertifikat?</div>
+        <div class="answer">
+            <p><strong>Boleh</strong>, maksimal <strong>15 sertifikat</strong>. Sistem akan mengambil <strong>skor tertinggi</strong> untuk perhitungan.</p>
+        </div>
+    </div>
+
+
+
+<!-- Pertanyaan 9 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">9. Bagaimana jika kuota prestasi tidak terpenuhi?</div>
+    <div class="answer">
+        <p>Sisa kuota akan dialihkan secara proporsional ke:</p>
+        <ul>
+            <li><strong>Jalur Domisili</strong> (prioritas utama)</li>
+            <li><strong>Jalur Nilai Prestasi Akademik SMK</strong></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Pertanyaan 10 -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">10. Kapan pendaftaran Jalur Prestasi Lomba?</div>
+    <div class="answer">
+        <ul>
+            <li><strong>Tahap I Registrasi</strong>: 16–17 Juni 2025
+                <ul>
+                    <li>Online melalui <em>spmb.jatimprov.go.id</em></li>
+                </ul>
+            </li>
+            <li><strong>Verifikasi Dokumen</strong>: 17–19 Juni 2025
+                <ul>
+                    <li>Dilakukan langsung di SMK tujuan</li>
+                </ul>
+            </li>
+            <li><strong>Pengumuman Hasil</strong>: 20 Juni 2025</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Contoh Kasus -->
+<div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Contoh Perhitungan Skor</div>
+    <div class="answer">
+        <div class="case-example">
+            <p><strong>Kasus A:</strong></p>
+            <ul>
+                <li>Nama: Andi</li>
+                <li>Prestasi: Juara II OSN Tingkat Provinsi</li>
+                <li>Perhitungan Skor: 16 poin (akademik)</li>
+            </ul>
+            
+            <p><strong>Kasus B:</strong></p>
+            <ul>
+                <li>Nama: Siti</li>
+                <li>Prestasi: Juara I FLS2N Tingkat Nasional</li>
+                <li>Perhitungan Skor: 64 poin (non-akademik)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="contact-box">
+            <h3>Informasi Lebih Lanjut</h3>
+            <p>📞 Call Center: 0800-1234-5678<br>
+            🌐 Website: <a href="https://spmb.jatimprov.go.id">spmb.jatimprov.go.id</a><br>
+            📱 Sosial Media: @dindik_jatim</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
