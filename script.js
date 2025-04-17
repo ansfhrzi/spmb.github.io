@@ -7,6 +7,15 @@ function closeSidebar() {
 }
 
 function toggleAnswer(clickedElement) {
+// Tutup semua jawaban yang sedang terbuka kecuali yang diklik
+const allQuestions = document.querySelectorAll('.question');
+allQuestions.forEach((question) => {
+    if (question !== clickedElement) {
+        question.classList.remove('active');
+        const otherAnswer = question.nextElementSibling;
+        otherAnswer.classList.remove('show');
+    }});
+
     // Kode sebelumnya tetap sama...
 
     const currentAnswer = clickedElement.nextElementSibling;
